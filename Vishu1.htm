@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            p{
+                color: blue;
+                font-size: larger;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+                font-style: unset;
+            }
+            legend{
+                color: blue;
+                font-size: larger;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+                font-style: unset;
+            }
+            input{
+                background-color: bisque;
+                border: 1px;
+                font-stretch: expanded;
+                font-style: oblique;
+                color: cadetblue;
+                border-color: blanchedalmond;
+            }
+            label{
+                color: teal;
+                font-size: larger;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+            }
+            form{
+                background-color: darkgray;
+                border: 1em;
+                border-color: dodgerblue;
+                border-radius: 2px;
+            }
+            #M{
+                background-color: darkgray;
+                border: 1em;
+                border-color: dodgerblue;
+                border-radius: 2px;
+            }
+            @media (min-width: 700px) {
+                body{
+                    width: auto;
+                    background-color: coral;
+                }
+                #M{
+                    background-color: darksalmon;
+                    font-family: 'Arial', 'Helvetica', 'sans-serif';
+                    color: cyan;
+                }
+                #S{
+                    background-color: bisque;
+                    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+                }
+            }
+            @media (max-width : 750px) {
+                body{
+                    width: auto;
+                    background-color: cadetblue;
+                }
+                #S{
+                    background-color: darkgray;
+                    font-family: 'Impact','Haettenschweiler', 'Arial Narrow Bold', 'sans-serif';
+                    color: darkmagenta;
+                }
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset id="s">
+            <h1> Form </h1>
+        </fieldset>
+        <fieldset id="M">
+        <form>
+            <p>
+                First Name:
+                <input type="text" placeholder="First Name" id="Fname" required>
+            </p>
+            <p>
+                Middle Name:
+                <input type="text" placeholder="Middle Name" id="Mname" required>
+            </p>
+            <p>
+                Last Name:
+                <input type="text" placeholder="Last Name" id="LName" required>
+            </p>
+            <fieldset id="S">
+                <legend> Gender  </legend>
+                <label> Male</label>
+                <input type="radio"  name="Gender" value="Male">
+                <label> Female  </label>
+                <input type="radio"  name="Gender" value="Female">
+                <label> Other </label>
+                <input type="radio"  name="Gender" value="Other">
+            </fieldset>
+            <p>
+                Email :
+                <input type="email" id="mail" placeholder="Email" required>
+            </p>
+            <p>
+                Password :
+                <input type="password" placeholder="password" required >
+            </p>
+            <p>
+                Remember Me
+                <input type="checkbox" id="Reme">
+            </p>
+            <button type="Submit"> Submit </button>
+            <button type="reset"> Reset</button>
+        </form>
+    </fieldset>
+    </center>
+</body>
+</html>
